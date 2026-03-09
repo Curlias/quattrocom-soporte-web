@@ -2077,3 +2077,33 @@ body {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
+/* ADDITIONAL ARTICLE STYLES */
+.article-contact-info {
+  margin-top: 3rem;
+}
+
+.contact-buttons {
+  display: flex;
+  gap: 1rem;
+  margin: 1.5rem 0;
+  flex-wrap: wrap;
+}
+
+.support-schedule {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: rgba(211, 47, 47, 0.1);
+  border-radius: var(--border-radius);
+  border-left: 3px solid var(--primary-color);
+}
+
+.support-schedule p {
+  margin: 0.25rem 0;
+  font-size: var(--font-size-sm);
+}
+
+.support-schedule p:first-child {
+  font-weight: 600;
+  color: var(--primary-color);
+}
