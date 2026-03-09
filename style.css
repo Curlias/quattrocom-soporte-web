@@ -798,6 +798,168 @@ body {
   transform: translateY(-2px);
 }
 
+/* CONTACT NOTE */
+.contact-note {
+  margin-top: 0.75rem;
+  padding: 0.5rem;
+  background: var(--accent-color);
+  border-radius: var(--border-radius);
+  text-align: center;
+}
+
+.contact-note small {
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+/* SUPPORT AREAS INFO */
+.support-areas-info {
+  margin-bottom: 2rem;
+}
+
+.info-card {
+  padding: 1.5rem;
+  border-radius: var(--border-radius-large);
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.info-card.warning {
+  background: rgba(255, 152, 0, 0.1);
+  border: 1px solid var(--status-degraded);
+  border-left: 4px solid var(--status-degraded);
+}
+
+.info-card.suspend {
+  background: rgba(33, 150, 243, 0.1);
+  border: 1px solid var(--status-maintenance);
+  border-left: 4px solid var(--status-maintenance);
+}
+
+.info-icon {
+  color: var(--status-degraded);
+  flex-shrink: 0;
+  margin-top: 0.25rem;
+}
+
+.info-card.suspend .info-icon {
+  color: var(--status-maintenance);
+}
+
+.info-card h4 {
+  color: var(--text-primary);
+  margin-bottom: 0.75rem;
+  font-size: var(--font-size-lg);
+}
+
+.info-card p {
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+/* SUSPENSION INFO */
+.suspension-info {
+  margin-bottom: 2rem;
+}
+
+.reconnection-process {
+  margin-top: 1.5rem;
+}
+
+.reconnection-process h5 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-size: var(--font-size-base);
+}
+
+.reconnection-process h6 {
+  color: var(--text-primary);
+  margin-bottom: 0.75rem;
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+}
+
+.process-steps {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.step {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.step-number {
+  width: 28px;
+  height: 28px;
+  background: var(--status-maintenance);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: var(--font-size-sm);
+  flex-shrink: 0;
+}
+
+.step-content {
+  flex: 1;
+}
+
+.step-content p {
+  margin-bottom: 0.5rem;
+}
+
+.highlight {
+  color: var(--primary-color) !important;
+  font-weight: 600;
+}
+
+.timing-info {
+  background: var(--secondary-color);
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  margin-top: 1rem;
+}
+
+.hours-schedule {
+  margin: 1rem 0;
+}
+
+.hours-schedule ul {
+  list-style: none;
+  padding: 0;
+}
+
+.hours-schedule li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.hours-schedule li:last-child {
+  border-bottom: none;
+}
+
+.wait-notice {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: var(--accent-color);
+  border-radius: var(--border-radius);
+  border-left: 3px solid var(--text-light);
+}
+
+.wait-notice p {
+  color: var(--text-secondary) !important;
+  font-size: var(--font-size-sm);
+  margin: 0;
+}
+
 /* SUPPORT HOURS */
 .support-hours {
   background: var(--accent-color);
@@ -1162,6 +1324,22 @@ body {
   .speed-ranges {
     grid-template-columns: 1fr;
   }
+  
+  .info-card {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .process-steps {
+    grid-template-columns: 1fr;
+  }
+  
+  .step {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
 }
 
 @media (max-width: 480px) {
