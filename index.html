@@ -10,8 +10,17 @@
 <body>
     <div class="theme-toggle">
         <button id="theme-toggle-btn" aria-label="Cambiar tema">
-            <span class="sun-icon">☀️</span>
-            <span class="moon-icon">🌙</span>
+            <span class="sun-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="5"/>
+                    <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+                </svg>
+            </span>
+            <span class="moon-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                </svg>
+            </span>
         </button>
     </div>
 
@@ -56,22 +65,39 @@
                     <!-- Quick Support Buttons -->
                     <div class="quick-actions">
                         <div class="action-card" data-section="report">
-                            <div class="action-icon">📋</div>
+                            <div class="action-icon">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2M9 5a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2M9 5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/>
+                                </svg>
+                            </div>
                             <h3>Reportar Problema</h3>
                             <p>Informa incidencias técnicas</p>
                         </div>
                         <div class="action-card" data-section="troubleshooting">
-                            <div class="action-icon">🔧</div>
+                            <div class="action-icon">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                                </svg>
+                            </div>
                             <h3>Guías de Solución</h3>
                             <p>Resuelve problemas comunes</p>
                         </div>
                         <div class="action-card" data-section="speed-test">
-                            <div class="action-icon">📊</div>
+                            <div class="action-icon">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M3 3v5h5M3 8.5C3 12.09 5.91 15 9.5 15S16 12.09 16 8.5 13.09 2 9.5 2 3 4.91 3 8.5zM21 21v-5h-5M21 15.5c0-3.59-2.91-6.5-6.5-6.5S8 11.91 8 15.5 10.91 22 14.5 22s6.5-2.91 6.5-6.5z"/>
+                                    <path d="M12 6v6l4 2"/>
+                                </svg>
+                            </div>
                             <h3>Probar Velocidad</h3>
                             <p>Verifica tu conexión</p>
                         </div>
                         <div class="action-card" data-section="contact">
-                            <div class="action-icon">💬</div>
+                            <div class="action-icon">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                                </svg>
+                            </div>
                             <h3>Contactar Soporte</h3>
                             <p>Habla con un técnico</p>
                         </div>
@@ -92,12 +118,22 @@
                 <!-- Search Bar -->
                 <div class="search-container">
                     <input type="text" id="search-input" placeholder="Buscar solución..." class="search-input">
-                    <button class="search-btn">🔍</button>
+                    <button class="search-btn">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"/>
+                            <path d="M21 21l-4.35-4.35"/>
+                        </svg>
+                    </button>
                 </div>
 
                 <div class="troubleshooting-grid">
                     <div class="troubleshoot-card" data-keywords="internet lento velocidad conexión">
-                        <div class="card-icon">🐌</div>
+                        <div class="card-icon">
+                            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                                <circle cx="12" cy="12" r="2" fill="currentColor"/>
+                            </svg>
+                        </div>
                         <h3>Internet Lento</h3>
                         <p>Pasos para mejorar la velocidad de tu conexión</p>
                         <div class="card-content">
@@ -112,7 +148,13 @@
                     </div>
 
                     <div class="troubleshoot-card" data-keywords="sin conexión internet desconectado no navega">
-                        <div class="card-icon">🚫</div>
+                        <div class="card-icon">
+                            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="12" r="10"/>
+                                <line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/>
+                                <path d="M8.5 8.5L4 12l4.5 3.5M15.5 15.5L20 12l-4.5-3.5"/>
+                            </svg>
+                        </div>
                         <h3>Sin Conexión a Internet</h3>
                         <p>Soluciona problemas de conectividad</p>
                         <div class="card-content">
@@ -127,7 +169,14 @@
                     </div>
 
                     <div class="troubleshoot-card" data-keywords="wifi problemas wireless señal cobertura">
-                        <div class="card-icon">📶</div>
+                        <div class="card-icon">
+                            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M5 12.55a11 11 0 0 1 14.08 0"/>
+                                <path d="M1.42 9a16 16 0 0 1 21.16 0"/>
+                                <path d="M8.53 16.11a6 6 0 0 1 6.95 0"/>
+                                <path d="M12 20h.01"/>
+                            </svg>
+                        </div>
                         <h3>Problemas de WiFi</h3>
                         <p>Mejora tu conexión inalámbrica</p>
                         <div class="card-content">
@@ -142,7 +191,12 @@
                     </div>
 
                     <div class="troubleshoot-card" data-keywords="reiniciar router modem reset">
-                        <div class="card-icon">🔄</div>
+                        <div class="card-icon">
+                            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M23 4v6h-6"/>
+                                <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/>
+                            </svg>
+                        </div>
                         <h3>Cómo Reiniciar Router</h3>
                         <p>Proceso paso a paso para reiniciar tu equipo</p>
                         <div class="card-content">
@@ -157,7 +211,13 @@
                     </div>
 
                     <div class="troubleshoot-card" data-keywords="mejorar cobertura amplificar señal wifi repetidor">
-                        <div class="card-icon">📡</div>
+                        <div class="card-icon">
+                            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"/>
+                                <circle cx="19" cy="12" r="2"/>
+                                <path d="M17 12h.01M15 12h.01"/>
+                            </svg>
+                        </div>
                         <h3>Mejorar Cobertura WiFi</h3>
                         <p>Optimiza la señal en toda tu casa</p>
                         <div class="card-content">
@@ -211,9 +271,41 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="https://wifiman.com" target="_blank" class="speed-test-btn">
-                            Realizar Test de Velocidad
-                        </a>
+                        <div class="speed-test-actions">
+                            <a href="https://wifiman.com" target="_blank" class="speed-test-btn primary">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polyline points="8,12 12,16 16,12"/>
+                                    <line x1="12" y1="8" x2="12" y2="16"/>
+                                </svg>
+                                Ir a WiFiMan (Recomendado)
+                            </a>
+                            <a href="https://fast.com" target="_blank" class="speed-test-btn secondary">
+                                Alternativa: Fast.com
+                            </a>
+                        </div>
+                        
+                        <div class="speed-test-info-box">
+                            <h4>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 8px;">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="9,9h6v6H9V9z"/>
+                                    <path d="9,1v6h6V1"/>
+                                </svg>
+                                Qué esperar en tu test:
+                            </h4>
+                            <div class="speed-ranges">
+                                <div class="speed-range good">
+                                    <strong>Excelente:</strong> 80-100% de la velocidad contratada
+                                </div>
+                                <div class="speed-range ok">
+                                    <strong>Bueno:</strong> 60-79% de la velocidad contratada  
+                                </div>
+                                <div class="speed-range poor">
+                                    <strong>Revisar:</strong> Menos del 60% - Contacta soporte
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -354,7 +446,12 @@
                 <h2 class="section-title">Contactar Soporte</h2>
                 <div class="contact-options">
                     <div class="contact-card">
-                        <div class="contact-icon">📱</div>
+                        <div class="contact-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                <path d="M14.05 2a9 9 0 0 1 8 7.94M14.05 6A5 5 0 0 1 18 10"/>
+                            </svg>
+                        </div>
                         <h3>WhatsApp</h3>
                         <p>Chatea con nuestro equipo de soporte</p>
                         <p class="contact-info">+1 (555) 123-4567</p>
@@ -364,7 +461,11 @@
                     </div>
                     
                     <div class="contact-card">
-                        <div class="contact-icon">📞</div>
+                        <div class="contact-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                        </div>
                         <h3>Soporte Telefónico</h3>
                         <p>Llámanos las 24 horas del día</p>
                         <p class="contact-info">+1 (555) 987-6543</p>
@@ -374,7 +475,12 @@
                     </div>
                     
                     <div class="contact-card">
-                        <div class="contact-icon">✉️</div>
+                        <div class="contact-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                        </div>
                         <h3>Email</h3>
                         <p>Envíanos tu consulta por correo</p>
                         <p class="contact-info">soporte@quattrocom.com</p>
@@ -456,7 +562,11 @@
     <!-- WhatsApp Floating Button -->
     <div class="whatsapp-float">
         <a href="https://wa.me/15551234567" target="_blank" class="whatsapp-btn">
-            <span class="whatsapp-icon">💬</span>
+            <span class="whatsapp-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.520-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.465 3.516"/>
+                </svg>
+            </span>
         </a>
     </div>
 
@@ -478,8 +588,19 @@
                 </div>
                 <div class="footer-section">
                     <h4>Contacto</h4>
-                    <p>📞 +1 (555) 987-6543</p>
-                    <p>✉️ soporte@quattrocom.com</p>
+                    <p>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="display: inline; margin-right: 8px; vertical-align: middle;">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+                        +1 (555) 987-6543
+                    </p>
+                    <p>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="display: inline; margin-right: 8px; vertical-align: middle;">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                        soporte@quattrocom.com
+                    </p>
                 </div>
             </div>
             <div class="footer-bottom">
