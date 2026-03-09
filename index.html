@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro de Soporte Quattrocom</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn" aria-label="Cambiar tema">
+            <span class="sun-icon">☀️</span>
+            <span class="moon-icon">🌙</span>
+        </button>
+    </div>
+
+    <header class="header">
+        <div class="container">
+            <div class="nav-brand">
+                <h1 class="logo">Quattrocom</h1>
+                <span class="tagline">Soporte Técnico</span>
+            </div>
+            <nav class="nav">
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link active">Inicio</a></li>
+                    <li><a href="#troubleshooting" class="nav-link">Soluciones</a></li>
+                    <li><a href="#speed-test" class="nav-link">Test Velocidad</a></li>
+                    <li><a href="#report" class="nav-link">Reportar</a></li>
+                    <li><a href="#contact" class="nav-link">Contacto</a></li>
+                    <li><a href="#status" class="nav-link">Estado Red</a></li>
+                </ul>
+                <button class="menu-toggle" id="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="section hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Centro de Soporte Quattrocom</h1>
+                    <p class="hero-subtitle">Obtén ayuda rápida y eficiente para tu servicio de internet</p>
+                    
+                    <!-- Status Indicator -->
+                    <div class="status-indicator">
+                        <div class="status-dot operational"></div>
+                        <span>Servicio Operacional</span>
+                    </div>
+
+                    <!-- Quick Support Buttons -->
+                    <div class="quick-actions">
+                        <div class="action-card" data-section="report">
+                            <div class="action-icon">📋</div>
+                            <h3>Reportar Problema</h3>
+                            <p>Informa incidencias técnicas</p>
+                        </div>
+                        <div class="action-card" data-section="troubleshooting">
+                            <div class="action-icon">🔧</div>
+                            <h3>Guías de Solución</h3>
+                            <p>Resuelve problemas comunes</p>
+                        </div>
+                        <div class="action-card" data-section="speed-test">
+                            <div class="action-icon">📊</div>
+                            <h3>Probar Velocidad</h3>
+                            <p>Verifica tu conexión</p>
+                        </div>
+                        <div class="action-card" data-section="contact">
+                            <div class="action-icon">💬</div>
+                            <h3>Contactar Soporte</h3>
+                            <p>Habla con un técnico</p>
+                        </div>
+                    </div>
+
+                    <div class="intro-text">
+                        <p>Nuestro centro de soporte está disponible 24/7 para ayudarte con cualquier problema técnico. Utiliza nuestras herramientas de autoayuda o contacta directamente con nuestros técnicos especializados.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Troubleshooting Section -->
+        <section id="troubleshooting" class="section">
+            <div class="container">
+                <h2 class="section-title">Guías de Solución</h2>
+                
+                <!-- Search Bar -->
+                <div class="search-container">
+                    <input type="text" id="search-input" placeholder="Buscar solución..." class="search-input">
+                    <button class="search-btn">🔍</button>
+                </div>
+
+                <div class="troubleshooting-grid">
+                    <div class="troubleshoot-card" data-keywords="internet lento velocidad conexión">
+                        <div class="card-icon">🐌</div>
+                        <h3>Internet Lento</h3>
+                        <p>Pasos para mejorar la velocidad de tu conexión</p>
+                        <div class="card-content">
+                            <ol>
+                                <li>Reinicia tu router desconectándolo por 30 segundos</li>
+                                <li>Verifica que no hay descargas activas</li>
+                                <li>Conecta tu dispositivo por cable Ethernet</li>
+                                <li>Cierra aplicaciones que consuman ancho de banda</li>
+                                <li>Realiza un test de velocidad en wifiman.com</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="troubleshoot-card" data-keywords="sin conexión internet desconectado no navega">
+                        <div class="card-icon">🚫</div>
+                        <h3>Sin Conexión a Internet</h3>
+                        <p>Soluciona problemas de conectividad</p>
+                        <div class="card-content">
+                            <ol>
+                                <li>Verifica que todos los cables estén conectados</li>
+                                <li>Revisa las luces del router (deben estar verdes)</li>
+                                <li>Reinicia el router por 2 minutos</li>
+                                <li>Verifica la configuración de red en tu dispositivo</li>
+                                <li>Contacta soporte si el problema persiste</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="troubleshoot-card" data-keywords="wifi problemas wireless señal cobertura">
+                        <div class="card-icon">📶</div>
+                        <h3>Problemas de WiFi</h3>
+                        <p>Mejora tu conexión inalámbrica</p>
+                        <div class="card-content">
+                            <ol>
+                                <li>Acércate al router para mejor señal</li>
+                                <li>Reinicia la conexión WiFi en tu dispositivo</li>
+                                <li>Olvida y vuelve a conectar la red WiFi</li>
+                                <li>Cambia el canal WiFi en la configuración del router</li>
+                                <li>Considera usar la banda de 5GHz si está disponible</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="troubleshoot-card" data-keywords="reiniciar router modem reset">
+                        <div class="card-icon">🔄</div>
+                        <h3>Cómo Reiniciar Router</h3>
+                        <p>Proceso paso a paso para reiniciar tu equipo</p>
+                        <div class="card-content">
+                            <ol>
+                                <li>Desconecta el cable de alimentación del router</li>
+                                <li>Espera 30 segundos</li>
+                                <li>Vuelve a conectar el cable de alimentación</li>
+                                <li>Espera 2-3 minutos hasta que las luces se estabilicen</li>
+                                <li>Prueba tu conexión</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="troubleshoot-card" data-keywords="mejorar cobertura amplificar señal wifi repetidor">
+                        <div class="card-icon">📡</div>
+                        <h3>Mejorar Cobertura WiFi</h3>
+                        <p>Optimiza la señal en toda tu casa</p>
+                        <div class="card-content">
+                            <ol>
+                                <li>Coloca el router en posición central y elevada</li>
+                                <li>Aleja el router de dispositivos que interfieran</li>
+                                <li>Actualiza el firmware del router</li>
+                                <li>Considera un repetidor WiFi para áreas lejanas</li>
+                                <li>Usa aplicaciones como WiFiMan para medir señal</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Speed Test Section -->
+        <section id="speed-test" class="section">
+            <div class="container">
+                <h2 class="section-title">Test de Velocidad</h2>
+                <div class="speed-test-content">
+                    <div class="speed-test-info">
+                        <h3>Cómo realizar un test de velocidad preciso</h3>
+                        <div class="instructions">
+                            <div class="instruction-step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h4>Conecta por cable Ethernet</h4>
+                                    <p>Para obtener resultados más precisos, conecta tu dispositivo directamente al router con un cable Ethernet.</p>
+                                </div>
+                            </div>
+                            <div class="instruction-step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h4>Cierra otras aplicaciones</h4>
+                                    <p>Asegúrate de cerrar aplicaciones que usen internet como streaming, descargas o videollamadas.</p>
+                                </div>
+                            </div>
+                            <div class="instruction-step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h4>Ejecuta el test</h4>
+                                    <p>Haz clic en el botón de abajo para ir a wifiman.com y realizar el test de velocidad.</p>
+                                </div>
+                            </div>
+                            <div class="instruction-step">
+                                <div class="step-number">4</div>
+                                <div class="step-content">
+                                    <h4>Toma captura y envía</h4>
+                                    <p>Toma una captura de pantalla del resultado y envíala a nuestro soporte técnico.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="https://wifiman.com" target="_blank" class="speed-test-btn">
+                            Realizar Test de Velocidad
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Report Problem Section -->
+        <section id="report" class="section">
+            <div class="container">
+                <h2 class="section-title">Reportar Problema</h2>
+                <form class="report-form" id="report-form">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="name">Nombre Completo *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Número de Teléfono *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo Electrónico *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="customer-id">ID de Cliente (opcional)</label>
+                            <input type="text" id="customer-id" name="customer-id">
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="address">Dirección del Servicio *</label>
+                            <input type="text" id="address" name="address" required>
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="problem-type">Tipo de Problema *</label>
+                            <select id="problem-type" name="problem-type" required>
+                                <option value="">Selecciona el tipo de problema</option>
+                                <option value="sin-internet">Sin acceso a internet</option>
+                                <option value="internet-lento">Internet lento</option>
+                                <option value="problemas-wifi">Problemas con WiFi</option>
+                                <option value="facturacion">Consultas de facturación</option>
+                                <option value="instalacion">Problemas de instalación</option>
+                                <option value="equipos">Problemas con equipos</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="description">Descripción del Problema *</label>
+                            <textarea id="description" name="description" rows="4" required placeholder="Describe detalladamente el problema que estás experimentando..."></textarea>
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="screenshot">Subir Captura de Pantalla</label>
+                            <input type="file" id="screenshot" name="screenshot" accept="image/*">
+                            <small>Formatos permitidos: JPG, PNG, GIF (máx. 5MB)</small>
+                        </div>
+                    </div>
+                    <button type="submit" class="submit-btn">Enviar Reporte</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Knowledge Base Section -->
+        <section id="knowledge-base" class="section">
+            <div class="container">
+                <h2 class="section-title">Base de Conocimientos</h2>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>¿Cómo reinicio mi router?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Para reiniciar tu router correctamente:</p>
+                            <ol>
+                                <li>Desconecta el cable de alimentación del router</li>
+                                <li>Espera 30 segundos</li>
+                                <li>Vuelve a conectar el cable</li>
+                                <li>Espera 2-3 minutos hasta que las luces se estabilicen</li>
+                            </ol>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>¿Por qué mi internet está lento?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Las causas más comunes de internet lento incluyen:</p>
+                            <ul>
+                                <li>Muchos dispositivos conectados simultáneamente</li>
+                                <li>Aplicaciones consumiendo ancho de banda en segundo plano</li>
+                                <li>Interferencia en la señal WiFi</li>
+                                <li>Router que necesita reiniciarse</li>
+                                <li>Problemas en la línea o equipos</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>¿Cómo mejoro la señal WiFi?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Para mejorar tu señal WiFi:</p>
+                            <ul>
+                                <li>Posiciona el router en un lugar central y elevado</li>
+                                <li>Aleja el router de microondas y otros dispositivos</li>
+                                <li>Usa la banda de 5GHz si está disponible</li>
+                                <li>Considera un repetidor para áreas grandes</li>
+                                <li>Actualiza el firmware del router regularmente</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>¿Cómo conecto nuevos dispositivos?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Para conectar nuevos dispositivos a tu WiFi:</p>
+                            <ol>
+                                <li>En tu dispositivo, ve a Configuración > WiFi</li>
+                                <li>Selecciona tu red WiFi (nombre del router)</li>
+                                <li>Ingresa la contraseña WiFi (ubicada en la etiqueta del router)</li>
+                                <li>Confirma la conexión</li>
+                                <li>Si tienes problemas, reinicia el router y intenta nuevamente</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Support Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">Contactar Soporte</h2>
+                <div class="contact-options">
+                    <div class="contact-card">
+                        <div class="contact-icon">📱</div>
+                        <h3>WhatsApp</h3>
+                        <p>Chatea con nuestro equipo de soporte</p>
+                        <p class="contact-info">+1 (555) 123-4567</p>
+                        <a href="https://wa.me/15551234567" class="contact-btn whatsapp">
+                            Abrir WhatsApp
+                        </a>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">📞</div>
+                        <h3>Soporte Telefónico</h3>
+                        <p>Llámanos las 24 horas del día</p>
+                        <p class="contact-info">+1 (555) 987-6543</p>
+                        <a href="tel:+15559876543" class="contact-btn phone">
+                            Llamar Ahora
+                        </a>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">✉️</div>
+                        <h3>Email</h3>
+                        <p>Envíanos tu consulta por correo</p>
+                        <p class="contact-info">soporte@quattrocom.com</p>
+                        <a href="mailto:soporte@quattrocom.com" class="contact-btn email">
+                            Enviar Email
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="support-hours">
+                    <h3>Horarios de Atención</h3>
+                    <div class="hours-grid">
+                        <div class="hours-item">
+                            <strong>Soporte Técnico 24/7</strong>
+                            <p>WhatsApp y Teléfono disponibles las 24 horas</p>
+                        </div>
+                        <div class="hours-item">
+                            <strong>Email</strong>
+                            <p>Respuesta en máximo 2 horas</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Network Status Section -->
+        <section id="status" class="section">
+            <div class="container">
+                <h2 class="section-title">Estado de la Red</h2>
+                <div class="status-dashboard">
+                    <div class="status-overview">
+                        <div class="status-card operational">
+                            <div class="status-indicator">
+                                <div class="status-dot"></div>
+                                <h3>Servicio Operacional</h3>
+                            </div>
+                            <p>Todos los servicios funcionan normalmente</p>
+                            <span class="last-updated">Última actualización: Hace 2 minutos</span>
+                        </div>
+                    </div>
+                    
+                    <div class="service-status">
+                        <h3>Estado de Servicios</h3>
+                        <div class="service-list">
+                            <div class="service-item">
+                                <div class="service-dot operational"></div>
+                                <span class="service-name">Internet Residencial</span>
+                                <span class="service-status-text">Operacional</span>
+                            </div>
+                            <div class="service-item">
+                                <div class="service-dot operational"></div>
+                                <span class="service-name">Internet Empresarial</span>
+                                <span class="service-status-text">Operacional</span>
+                            </div>
+                            <div class="service-item">
+                                <div class="service-dot operational"></div>
+                                <span class="service-name">Soporte Técnico</span>
+                                <span class="service-status-text">Operacional</span>
+                            </div>
+                            <div class="service-item">
+                                <div class="service-dot operational"></div>
+                                <span class="service-name">Portal de Cliente</span>
+                                <span class="service-status-text">Operacional</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="maintenance-schedule">
+                        <h3>Mantenimientos Programados</h3>
+                        <div class="maintenance-list">
+                            <p>No hay mantenimientos programados en las próximas 48 horas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- WhatsApp Floating Button -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/15551234567" target="_blank" class="whatsapp-btn">
+            <span class="whatsapp-icon">💬</span>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Quattrocom</h4>
+                    <p>Proveedor líder de servicios de internet</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Soporte</h4>
+                    <ul>
+                        <li><a href="#troubleshooting">Guías de solución</a></li>
+                        <li><a href="#report">Reportar problema</a></li>
+                        <li><a href="#contact">Contactar soporte</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p>📞 +1 (555) 987-6543</p>
+                    <p>✉️ soporte@quattrocom.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Quattrocom. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

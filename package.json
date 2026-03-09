@@ -1,0 +1,38 @@
+{
+  "name": "quattrocom-soporte-web",
+  "version": "1.0.0",
+  "description": "Portal web moderno y responsive para el soporte técnico de Quattrocom ISP",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "serve": "python3 -m http.server 8000",
+    "dev": "python -m http.server 8080"
+  },
+  "keywords": [
+    "quattrocom",
+    "support",
+    "isp",
+    "technical-support",
+    "web-portal",
+    "responsive",
+    "vanilla-js"
+  ],
+  "author": "Quattrocom Technical Team",
+  "license": "Proprietary",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quattrocom/soporte-web.git"
+  },
+  "bugs": {
+    "url": "https://github.com/quattrocom/soporte-web/issues"
+  },
+  "homepage": "https://soporte.quattrocom.com",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
