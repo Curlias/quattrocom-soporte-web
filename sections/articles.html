@@ -1,0 +1,281 @@
+<!-- Technical Articles Section -->
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">Artículos Técnicos</h2>
+        <p class="section-subtitle">Guías avanzadas para diagnóstico y solución de problemas de conectividad</p>
+        
+        <!-- Search Bar -->
+        <div class="search-container">
+            <input type="text" id="articles-search" placeholder="Buscar artículo técnico..." class="search-input">
+            <button class="search-btn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"/>
+                    <path d="M21 21l-4.35-4.35"/>
+                </svg>
+            </button>
+        </div>
+
+        <div class="articles-grid">
+            <!-- Ping Article -->
+            <article class="article-card" data-keywords="ping latencia paquetes perdidos conectividad diagnóstico">
+                <div class="article-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        <circle cx="12" cy="12" r="3"/>
+                    </svg>
+                </div>
+                <div class="article-content">
+                    <h3>Cómo hacer Ping</h3>
+                    <p>Diagnóstica problemas de conectividad y latencia utilizando el comando ping</p>
+                    <div class="article-details">
+                        <div class="article-step">
+                            <h4>En Windows:</h4>
+                            <ol>
+                                <li>Presiona <kbd>Win + R</kbd></li>
+                                <li>Escribe <code>cmd</code> y presiona Enter</li>
+                                <li>Ejecuta: <code>ping google.com</code></li>
+                                <li>O prueba con tu gateway: <code>ping 192.168.1.1</code></li>
+                            </ol>
+                        </div>
+                        
+                        <div class="article-step">
+                            <h4>En Mac/Linux:</h4>
+                            <ol>
+                                <li>Abre Terminal</li>
+                                <li>Ejecuta: <code>ping google.com</code></li>
+                                <li>Para detener: presiona <kbd>Ctrl + C</kbd></li>
+                            </ol>
+                        </div>
+                        
+                        <div class="article-step">
+                            <h4>Interpretación de resultados:</h4>
+                            <div class="ping-results">
+                                <div class="result-item good">
+                                    <strong>Bueno:</strong> Tiempo < 50ms, 0% pérdida de paquetes
+                                </div>
+                                <div class="result-item ok">
+                                    <strong>Aceptable:</strong> Tiempo 50-100ms, pérdida < 5%
+                                </div>
+                                <div class="result-item poor">
+                                    <strong>Problemático:</strong> Tiempo > 100ms o pérdida > 5%
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="article-step">
+                            <h4>Comandos útiles:</h4>
+                            <div class="command-examples">
+                                <div class="command">
+                                    <code>ping -t google.com</code>
+                                    <span>Windows: Ping continuo</span>
+                                </div>
+                                <div class="command">
+                                    <code>ping -c 10 google.com</code>
+                                    <span>Mac/Linux: 10 pings</span>
+                                </div>
+                                <div class="command">
+                                    <code>ping 8.8.8.8</code>
+                                    <span>Ping a DNS de Google</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Tracert Article -->
+            <article class="article-card" data-keywords="traceroute tracert ruta saltos hops conectividad routing">
+                <div class="article-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                        <polyline points="7.5,4.21 12,6.81 16.5,4.21"/>
+                        <polyline points="7.5,19.79 7.5,14.6 3,12"/>
+                        <polyline points="21,12 16.5,14.6 16.5,19.79"/>
+                    </svg>
+                </div>
+                <div class="article-content">
+                    <h3>Cómo hacer Traceroute</h3>
+                    <p>Rastrea la ruta que toman los paquetes hasta su destino para identificar problemas de routing</p>
+                    <div class="article-details">
+                        <div class="article-step">
+                            <h4>En Windows:</h4>
+                            <ol>
+                                <li>Presiona <kbd>Win + R</kbd></li>
+                                <li>Escribe <code>cmd</code> y presiona Enter</li>
+                                <li>Ejecuta: <code>tracert google.com</code></li>
+                                <li>Espera a que termine (puede tardar 1-2 minutos)</li>
+                            </ol>
+                        </div>
+                        
+                        <div class="article-step">
+                            <h4>En Mac/Linux:</h4>
+                            <ol>
+                                <li>Abre Terminal</li>
+                                <li>Ejecuta: <code>traceroute google.com</code></li>
+                                <li>En algunos Linux: <code>tracepath google.com</code></li>
+                            </ol>
+                        </div>
+                        
+                        <div class="article-step">
+                            <h4>Interpretación de resultados:</h4>
+                            <div class="tracert-info">
+                                <p><strong>Cada línea representa un "salto" en la ruta:</strong></p>
+                                <ul>
+                                    <li><strong>Salto 1:</strong> Tu router/gateway (192.168.x.x)</li>
+                                    <li><strong>Saltos 2-4:</strong> Equipos del ISP local</li>
+                                    <li><strong>Saltos 5+:</strong> Internet backbone</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="article-step">
+                            <h4>Señales de problema:</h4>
+                            <div class="problem-indicators">
+                                <div class="indicator">
+                                    <strong>* * * Request timed out</strong>
+                                    <p>El salto no responde (puede ser normal en algunos routers)</p>
+                                </div>
+                                <div class="indicator">
+                                    <strong>Tiempos muy altos (>200ms)</strong>
+                                    <p>Posible congestión en ese punto de la red</p>
+                                </div>
+                                <div class="indicator">
+                                    <strong>Se detiene en salto específico</strong>
+                                    <p>Problema de routing o bloqueo en ese punto</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="article-step">
+                            <h4>Cuándo usar traceroute:</h4>
+                            <ul>
+                                <li>Sitios específicos no cargan pero otros sí</li>
+                                <li>Conexión lenta a ciertos destinos</li>
+                                <li>Para reportes de IP bloqueada</li>
+                                <li>Diagnóstico de problemas de routing</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Network Diagnostics Article -->
+            <article class="article-card" data-keywords="diagnóstico red ipconfig ifconfig dns nslookup">
+                <div class="article-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                        <circle cx="8.5" cy="8.5" r="1.5"/>
+                        <path d="M21 15l-5-5L5 21"/>
+                    </svg>
+                </div>
+                <div class="article-content">
+                    <h3>Diagnóstico de Red Avanzado</h3>
+                    <p>Comandos adicionales para diagnóstico completo de problemas de red</p>
+                    <div class="article-details">
+                        <div class="article-step">
+                            <h4>Verificar configuración de red:</h4>
+                            <div class="command-examples">
+                                <div class="command">
+                                    <code>ipconfig /all</code>
+                                    <span>Windows: Configuración completa</span>
+                                </div>
+                                <div class="command">
+                                    <code>ifconfig</code>
+                                    <span>Mac/Linux: Configuración de red</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="article-step">
+                            <h4>Limpiar caché DNS:</h4>
+                            <div class="command-examples">
+                                <div class="command">
+                                    <code>ipconfig /flushdns</code>
+                                    <span>Windows: Limpiar DNS</span>
+                                </div>
+                                <div class="command">
+                                    <code>sudo dscacheutil -flushcache</code>
+                                    <span>Mac: Limpiar DNS</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="article-step">
+                            <h4>Probar resolución DNS:</h4>
+                            <div class="command-examples">
+                                <div class="command">
+                                    <code>nslookup google.com</code>
+                                    <span>Verificar resolución de nombres</span>
+                                </div>
+                                <div class="command">
+                                    <code>nslookup google.com 8.8.8.8</code>
+                                    <span>Probar con DNS específico</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Speed Test CLI Article -->
+            <article class="article-card" data-keywords="speedtest cli terminal velocidad línea comandos">
+                <div class="article-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                        <line x1="8" y1="21" x2="16" y2="21"/>
+                        <line x1="12" y1="17" x2="12" y2="21"/>
+                        <path d="M7 11h10v2H7z"/>
+                    </svg>
+                </div>
+                <div class="article-content">
+                    <h3>Test de Velocidad por Terminal</h3>
+                    <p>Realizar tests de velocidad desde línea de comandos para diagnósticos precisos</p>
+                    <div class="article-details">
+                        <div class="article-step">
+                            <h4>Instalación (una sola vez):</h4>
+                            <div class="command-examples">
+                                <div class="command">
+                                    <code>curl -s https://install.speedtest.net/app/cli/install.deb.sh | sudo bash</code>
+                                    <span>Ubuntu/Debian</span>
+                                </div>
+                                <div class="command">
+                                    <code>brew install speedtest-cli</code>
+                                    <span>Mac con Homebrew</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="article-step">
+                            <h4>Uso básico:</h4>
+                            <div class="command-examples">
+                                <div class="command">
+                                    <code>speedtest</code>
+                                    <span>Test completo automático</span>
+                                </div>
+                                <div class="command">
+                                    <code>speedtest --accept-license --accept-gdpr</code>
+                                    <span>Primera ejecución</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        
+        <div class="article-contact-info">
+            <div class="info-card">
+                <h4>¿Necesitas ayuda con estos comandos?</h4>
+                <p>Si tienes dificultades ejecutando estos comandos o interpretas resultados anómalos, nuestro equipo técnico puede ayudarte.</p>
+                <div class="contact-buttons">
+                    <a href="https://wa.me/5214422810816" class="contact-btn whatsapp" target="_blank">
+                        WhatsApp Soporte
+                    </a>
+                    <a href="tel:4421533000" class="contact-btn phone">
+                        Llamar: 442 153 3000, opción 2
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
